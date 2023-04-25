@@ -1,0 +1,63 @@
+.Footer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footerHeading {
+  width: 40%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    /* line-height: 44px; */
+    color: #ffffff;
+}
+
+.footerLinks {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 46%;
+}
+
+.eachLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 49%;
+}
+
+.eachLink img {
+  width: 7%;
+  /* height: -moz-fit-content; */
+  height: fit-content;
+}
+
+.link {
+  width: 53%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  text-align: center;
+  /* line-height: 36px; */
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  .footerHeading{
+    font-size: 1rem;
+  }
+  .footerLinks{
+    width: 51%;
+  }
+  .eachLink img{
+    width: 12%;
+  }
+}

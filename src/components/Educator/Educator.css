@@ -1,0 +1,165 @@
+.educator {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 8rem auto;
+  /* height: 45rem; */
+}
+
+.educatorBox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftEducator {
+  width: 42%;
+  /* height: 90%; */
+}
+
+.leftEducator img {
+  width: 100%;
+  height: 100%;
+}
+
+.rightEducator {
+  position: absolute;
+  left: 34rem;
+  top: 2rem;
+  width: 50%;
+  height: 100%;
+  /* flex-direction: column; */
+}
+/* 
+.educatorWhitespace {
+  height: 20%;
+} */
+
+.aboutEducator {
+  margin-left: 3rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 44px;
+  color: #ffffff;
+}
+
+.educatorInfo {
+  position: absolute;
+  top: 35%;
+  left: -35%;
+  /* width: 44%; */
+  /* right: -74%; */
+  background: linear-gradient(
+    119.23deg,
+    #e3c862 8.92%,
+    #dbbb44 25.5%,
+    #d4af3a 46.82%,
+    #b7912b 69.37%,
+    #a3781a 89.17%
+  );
+}
+
+.educatorInfo2 {
+  display: flex;
+  flex-direction: column;
+  background: #111111;
+  border-radius: 0px 50px 0px 40px;
+  border: 0.01rem solid #e3c862;
+  padding: 2rem 3rem;
+}
+
+.educatorName {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5rem;
+  /* line-height: 72px; */
+  color: #eeeeee;
+}
+
+.educatorQual {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  /* line-height: 36px; */
+  background: linear-gradient(
+    119.23deg,
+    #e3c862 8.92%,
+    #dbbb44 25.5%,
+    #d4af3a 46.82%,
+    #b7912b 69.37%,
+    #a3781a 89.17%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.educatorDescp {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: justify;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  .aboutEducator {
+    width: 100%;
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+
+  .educatorBox {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    /* position: relative; */
+  }
+
+  .rightEducator {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .leftEducator {
+    /* position: absolute; */
+    top: 10%;
+    margin: auto;
+    /* display: inline; */
+    left: 10%;
+    width: 17rem;
+    height: 20rem;
+    order: 1;
+    z-index: 1;
+  }
+
+  .educatorWhitespace {
+    height: 0;
+  }
+
+  .educatorInfo {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+
+  .educatorName {
+    font-size: 2rem;
+  }
+
+  .educatorDescp {
+    line-height: 1.6rem;
+  }
+}

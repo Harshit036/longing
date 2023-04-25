@@ -1,0 +1,106 @@
+.main {
+  position: relative;
+  height: 100vh;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/image\ 10.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  z-index: 1;
+}
+
+.videoBox{
+  position: absolute;
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.videoBox video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home {
+  height: 86%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.headingMain {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  /* line-height: 80px; */
+  width: 40%;
+  color: #ffffff;
+}
+
+.mainBox {
+  /* justify-items: center; */
+  /* height: 100%; */
+  width: 90%;
+  bottom: 0;
+  /* height: 100%; */
+  margin: 0 auto;
+  /* margin-top: 24rem; */
+  /* bottom: 0; */
+}
+
+.enrollButton {
+  margin-top: 1.5rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 11%;
+  /* line-height: 31px; */
+  padding: 0.8rem;
+  color: black;
+  /* mix-blend-mode: overlay; */
+  background: linear-gradient(
+    119.23deg,
+    #e3c862 8.92%,
+    #dbbb44 25.5%,
+    #d4af3a 46.82%,
+    #b7912b 69.37%,
+    #a3781a 89.17%
+  );
+  box-shadow: 0px 4px 11px 4px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+}
+
+.enrollButton:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 900px) {
+  /* .main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/image\ 10.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  } */
+
+  /* .videoBox{
+    display: none;
+  } */
+
+  .heading {
+    width: 55%;
+  }
+
+  .enrollButton {
+    width: 20%;
+  }
+}
